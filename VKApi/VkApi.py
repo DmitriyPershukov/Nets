@@ -5,8 +5,8 @@ import json
 
 
 try:
-    userId = int(sys.argv[1]);
-    token = "074477f9e69ea437917912cbf84b0dc22375d592ee28a56d96f07856b3a888d3f5ad45264ea5dfaacecdd"
+    userId = int(sys.argv[1])
+    token = sys.argv[2];
 except:
     print()
     sys.exit(9)
@@ -17,6 +17,6 @@ jsonParsed = json.loads(responce.content)
 try:
     for i in jsonParsed['response']["items"]:
         print(f"id{i['id']}")
+
 except:
     print(jsonParsed["error"]["error_msg"])
-f :int = 3
