@@ -18,7 +18,7 @@ class RequestHandle(http.server.BaseHTTPRequestHandler):
 
 
 suconds = int(open("confog.txt").read())
-port = 32
+port = 8080
 
 server_address = ("127.0.0.1", port)
 httpd = HTTPServer(server_address, RequestHandle)
