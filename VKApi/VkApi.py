@@ -8,7 +8,7 @@ try:
     userId = int(sys.argv[1])
     token = sys.argv[2];
 except:
-    print()
+    print("invalid argum")
     sys.exit(9)
 
 url = f"https://api.vk.com/method/photos.getAlbums?user_id={userId}&fields=nickname&access_token={token}&v=5.52";
